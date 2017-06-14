@@ -1,8 +1,5 @@
 const express = require('express')
-// const session = require('express-session')
 const authentication = require('../lib')
-// const RedisStore = require('connect-redis')(session)
-// const sessionStore = new RedisStore({ host: 'localhost' })
 
 const app = express()
 
