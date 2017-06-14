@@ -1,5 +1,7 @@
 # Duuoo Auth
 
+[![CircleCI](https://circleci.com/gh/Duuoo/duuoo-auth.svg?style=svg&circle-token=2cc443dc69233cf7e97c4e239bcdea711f092ee5)](https://circleci.com/gh/Duuoo/duuoo-auth)
+
 Authentication module for Duuoo. Uses [Passport](http://passportjs.org).
 
 ## Usage
