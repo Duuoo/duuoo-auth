@@ -29,8 +29,17 @@ const auth = authenticate({
   },
 })
 
+auth.serializeUser((user, done) => {
+  done(null, user)
+})
+
+auth.deserializeUser((user, done) => {
+  done(null, user)
+})
+
 // Initialize Passport
 app.use(auth.initialize())
+app.use(auth.session())
 
 app.get('/callback', auth.authenticate('auth0', { failureRedirect: '/' }, (req, res) => {
     res.redirect(req.session.returnTo || '/profile')
